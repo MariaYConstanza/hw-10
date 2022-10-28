@@ -13,7 +13,7 @@ const render = require('./src/page-template.js');
 const teamMembers = [];
 
 const generateHTML = ({name, id, email, officeNumber, school, role}) => 
-// html layout 
+// manager html layout 
 `<!DOCTYPE html>
 <html>
   <head>
@@ -43,7 +43,7 @@ const generateHTML = ({name, id, email, officeNumber, school, role}) =>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID:${id}</li>
           <li class="list-group-item">Email:${email}</li>
-          <li class="list-group-item">GitHub:${github}</li>
+          <li class="list-group-item">Office Number:${officeNumber}</li>
         </ul>
     </div>
  </main>
@@ -86,6 +86,16 @@ inquirer
     },
   ])
 
+  // engineer html layout
+
+  // inquirer questions and answers for engineer role
+
+  // intern html layout
+
+  // inquirer questions anf answers for intern role
+
+
+  
   .then((answers) => {
     const htmlPageContent = generateHTML(answers);
 
