@@ -32,6 +32,14 @@ test("Set email argument", () => {
     expect(employee.email).toBe(testValue);
 });
 
+test("Set github argument", () => {
+    const testValue = "github";
+    const engineer = new Engineer ("niki10", testValue);
+
+    expect(engineer.github).toBe(testValue);
+});
+
+
 
 
 // getting
@@ -61,4 +69,11 @@ test("get role argument", () => {
     const engineer = new Engineer(testValue)
 
     expect(engineer.getRole()).toBe(testValue);
+});
+
+test("get github argument", () => {
+    const testValue = "niki10";
+    const employee = new Employee(testValue);
+
+    expect(employee.getGithub()).toBe(testValue);
 });

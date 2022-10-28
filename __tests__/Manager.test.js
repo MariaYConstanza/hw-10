@@ -39,6 +39,13 @@ test("Set office number argument", () => {
     esxpect(manager.school).toBe(testValue);
 })
 
+test("Set github argument", () => {
+    const testValue = "github";
+    const manager = new Manager ("levi10", testValue);
+
+    expect(manager.github).toBe(testValue);
+});
+
 
 
 // getting
@@ -75,4 +82,11 @@ test("get office number argument", () => {
     const manager = new Manager(testValue);
 
     expect(manager.getOfficeNumber()).toBe(testValue);
+});
+
+test("get github argument", () => {
+    const testValue = "levi10";
+    const manager = new Manager(testValue);
+
+    expect(manager.getGithub()).toBe(testValue);
 });

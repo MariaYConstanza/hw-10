@@ -27,9 +27,16 @@ test("Set id arguments", () => {
 
 test("Set email argument", () => {
     const testValue = "email";
-    const employee = new Employee ("sarah@email.com", testValue)
+    const employee = new Employee ("sarah@email.com", testValue);
 
     expect(employee.email).toBe(testValue);
+});
+
+test("Set github argument", () => {
+    const testValue = "github";
+    const employee = new Employee ("sarah10", testValue);
+
+    expect(employee.github).toBe(testValue);
 });
 
 
@@ -61,4 +68,11 @@ test("get role argument", () => {
     const employee = new Employee(testValue)
 
     expect(employee.getRole()).toBe(testValue);
+});
+
+test("get github argument", () => {
+    const testValue = "sarah10";
+    const employee = new Employee(testValue);
+
+    expect(employee.getGithub()).toBe(testValue);
 });
