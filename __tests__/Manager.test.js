@@ -1,11 +1,14 @@
 const Manager = require("../lib/Manager");
 
+
 // test start up
 test("creating an employee profile", () => {
     const manager = new Manager ()
     
     expect(typeof(manager)).toBe("object");
 });
+
+
 
 // setting
 test("Set name arguemnts", () => {
@@ -35,6 +38,7 @@ test("Set office number argument", () => {
 
     esxpect(manager.school).toBe(testValue);
 })
+
 
 
 // getting

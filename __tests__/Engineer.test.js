@@ -1,11 +1,14 @@
 const Engineer = require("../lib/Engineer");
 
+
 // test start up
 test("creating an employee profile", () => {
     const engineer = new Engineer ()
     
     expect(typeof(engineer)).toBe("object");
 });
+
+
 
 // setting
 test("Set name arguemnts", () => {
@@ -28,6 +31,7 @@ test("Set email argument", () => {
 
     expect(employee.email).toBe(testValue);
 });
+
 
 
 // getting

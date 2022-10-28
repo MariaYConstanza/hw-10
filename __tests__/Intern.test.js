@@ -1,11 +1,14 @@
 const Intern = require("../lib/Intern");
 
+
 // test start up
 test("creating an employee profile", () => {
     const intern = new Intern ()
     
     expect(typeof(intern)).toBe("object");
 });
+
+
 
 // setting
 test("Set name arguemnts", () => {
@@ -35,6 +38,7 @@ test("Set school argument", () => {
 
     esxpect(intern.school).toBe(testValue);
 })
+
 
 
 // getting

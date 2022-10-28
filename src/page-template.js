@@ -1,6 +1,6 @@
 const generateTeam = team => {
 
-    // create the manager html
+    // html for manager
     const generateManager = manager => {
         return `
         <!DOCTYPE html>
@@ -42,7 +42,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for engineers
+    //html for engineers
     const generateEngineer = engineer => {
         return `
         <!DOCTYPE html>
@@ -84,7 +84,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for interns
+    //html for interns
     const generateIntern = intern => {
         return `
         <!DOCTYPE html>
@@ -129,5 +129,7 @@ const generateTeam = team => {
 }
 
 module.exports = team => {
+
     // template literal - html body that calls the generate team function
+    
 }

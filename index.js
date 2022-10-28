@@ -13,6 +13,7 @@ const render = require('./src/page-template.js');
 const teamMembers = [];
 
 const generateHTML = ({name, id, email, officeNumber, school, role}) => 
+// html layout 
 `<!DOCTYPE html>
 <html>
   <head>
@@ -50,7 +51,7 @@ const generateHTML = ({name, id, email, officeNumber, school, role}) =>
   </body>
 </html>
 `
-
+// questions and answers for employee role and profile stats
 inquirer
   .prompt([
     {
@@ -84,6 +85,7 @@ inquirer
       message: 'What university are you currently enrolled?',
     },
   ])
+
   .then((answers) => {
     const htmlPageContent = generateHTML(answers);
 
