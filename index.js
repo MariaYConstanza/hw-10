@@ -12,7 +12,7 @@ const render = require('./src/page-template.js');
 
 const teamMembers = [];
 
-const generateHTML = ({}) => 
+const generateHTML = ({name, id, email, officeNumber, school, role}) => 
 `<!DOCTYPE html>
 <html>
   <head>
@@ -36,13 +36,13 @@ const generateHTML = ({}) =>
  <main>
     <div class="card custom-card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Employee Name</h5>
-          <p class="card-text">Employee position</p>
+          <h5 class="card-title">Employee Name ${name}</h5>
+          <p class="card-text">Employee position ${role}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">ID:</li>
-          <li class="list-group-item">Email:</li>
-          <li class="list-group-item">GitHub:</li>
+          <li class="list-group-item">ID:${id}</li>
+          <li class="list-group-item">Email:${email}</li>
+          <li class="list-group-item">GitHub:${github}</li>
         </ul>
     </div>
  </main>
