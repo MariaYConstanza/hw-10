@@ -126,7 +126,6 @@ const generateTeam = team => {
         `;
     };
 
-    // use the team array to generate pieces of html based on the employee role
 }
 
 module.exports = team => {

@@ -51,7 +51,47 @@ const generateHTML = ({name, id, email, officeNumber, school, role}) =>
 </html>
 `
 
-fs.writeFile()
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'name',
+      message: 'What is your name?',
+    },
+    {
+      type: 'input',
+      name: 'role',
+      message: 'What is your role in the company?',
+    },
+    {
+      type: 'input',
+      name: 'id',
+      message: 'What is your employee ID number?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your perferred email address?',
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter your GitHub Username.',
+    },
+    {
+      type: 'input',
+      name: 'school',
+      message: 'What university are you currently enrolled?',
+    },
+  ])
+  .then((answers) => {
+    const htmlPageContent = generateHTML(answers);
+
+    fs.writeFile('team.html', htmlPageContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created team.html!')
+    );
+  });
+
 
 // function for creating manager - inquirer questions
   // take those questions and create a new Manager with the user provided answers
