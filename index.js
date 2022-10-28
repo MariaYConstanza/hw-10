@@ -12,6 +12,7 @@ const render = require('./src/page-template.js');
 
 const teamMembers = [];
 
+fs.writeFile()
 
 // function for creating manager - inquirer questions
   // take those questions and create a new Manager with the user provided answers
