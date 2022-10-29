@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Team Profile
 
 ## Description
@@ -8,3 +10,5 @@ As a developer having a team profile will be essential for communication and get
 - MDN
 - GeeksforGeeks
 
+## Licenses
+Copyright [https://github.com/MariaYConstanza](https://github.com/${data.github}). All rights reseved
