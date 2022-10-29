@@ -8,4 +8,3 @@ As a developer having a team profile will be essential for communication and get
 - MDN
 - GeeksforGeeks
 
-## Deploy
